@@ -1,0 +1,17 @@
+
+    <div class="container">
+            <h3>Payment</h3>
+            <label for="ccnum">Credit Card Number</label>
+            <input type="text" id="ccnum" name="cardnumber" [(ngModel)]="paydto.cardnumber"  placeholder="4111-1111-1111-1111">
+  <label for="ccnum">Credit Card Name</label>
+                            <input type="text" id="ccholder" name="cardholder" placeholder="Jhon" [(ngModel)]="paydto.cardholder">    
+		  <label for="expmonth">Exp Date</label>
+            <input type="text" id="expdate" name="expdate" placeholder="5-22-2021" [(ngModel)]="paydto.expdate">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352" [(ngModel)]="paydto.seccode">
+				 <label for="cvv">Amount</label>
+                <input type="Number" id="amount" name="amount" placeholder="850" [(ngModel)]="paydto.amount">
+			<p class="error">{{error}}</p>
+			<button class="btn" (click)="sendrequest()">Send Request</button>
+    </div>
+
